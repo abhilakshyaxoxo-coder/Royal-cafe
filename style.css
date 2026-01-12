@@ -1,0 +1,94 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+.page-section {
+    min-height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #d4af37; /* Gold accent */
+}
+
+h1, h2 {
+    color: #d4af37;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Landing Page */
+#home {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1501339819358-ee5969a2f21c?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    text-align: center;
+}
+
+button {
+    background: #d4af37;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #fff;
+}
+
+/* Menu Grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.menu-item {
+    background: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #444;
+}
+
+/* Reviews */
+.review-card {
+    background: #333;
+    padding: 20px;
+    margin: 10px 0;
+    border-left: 5px solid #d4af37;
+    max-width: 600px;
+}
+
+/* Location */
+.location-box {
+    text-align: center;
+    line-height: 1.8;
+}
+
+.fake-map {
+    width: 300px;
+    height: 200px;
+    background: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border: 1px dashed #d4af37;
+}
