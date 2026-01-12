@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Cafe | Excellence in Every Sip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="home" class="page-section">
+        <div class="hero-content">
+            <h1>Royal Cafe</h1>
+            <p>Where heritage meets the perfect roast.</p>
+            <button onclick="scrollToSection('menu')">Explore Menu</button>
+        </div>
+    </section>
+
+    <section id="menu" class="page-section">
+        <h2>Our Royal Menu</h2>
+        <div class="menu-grid" id="menu-container">
+            </div>
+    </section>
+
+    <section id="reviews" class="page-section">
+        <div class="expertise">
+            <h2>Our Expertise</h2>
+            <p>With over 20 years of artisan roasting, we specialize in 100% Arabica beans and hand-pressed pastries.</p>
+        </div>
+        <div class="review-container">
+            <h2>What Our Royals Say</h2>
+            <div class="review-card">"The best espresso in the city! The ambiance is unmatched." - <strong>James D.</strong></div>
+            <div class="review-card">"Try the Golden Croissant; it's a life-changer." - <strong>Sarah L.</strong></div>
+            <div class="review-card">"Exquisite service and the staff really knows their beans." - <strong>Mark V.</strong></div>
+        </div>
+        <div class="like-section">
+            <h3>Tell us what you like?</h3>
+            <input type="text" id="user-preference" placeholder="e.g. Dark Roast, Iced Latte...">
+            <button onclick="savePreference()">Submit</button>
+            <p id="response-msg"></p>
+        </div>
+    </section>
+
+    <section id="location" class="page-section">
+        <h2>Find Us</h2>
+        <div class="location-box">
+            <p><strong>Address:</strong> 777 Platinum Boulevard, Marble District, Cloud City, 90210</p>
+            <p><strong>Hours:</strong> Mon-Sun: 7:00 AM - 11:00 PM</p>
+            <div class="fake-map">
+                [ Map View: Platinum Blvd & Gold St ]
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
